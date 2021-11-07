@@ -18,22 +18,30 @@
   <body>
     <div id="app">
       <div id="bar">
-        <h1>📺 TV shows search</h1>
-        <form id="search-form">
-          <input
-            type="text"
-            id="query"
-            name="query"
-            placeholder="type a show name"
-          />
-          <button>search</button>
-        </form>
+        <div class="banner">
+          <div class="titulo">
+            <h1>
+              <img class="logo" src="img/logo.jpg " alt="" />
+              TV Etec
+              <span>Show</span>
+            </h1>
+          </div>
+          <form id="search-form">
+            <input
+              type="text"
+              id="query"
+              name="query"
+              placeholder="digite o Show..."
+            />
+            <div id="confBT"><button class="bt">Buscar</button></div>
+          </form>
+        </div>
       </div>
       <div id="results">
         <p id="message"></p>
         <ul id="shows"></ul>
       </div>
-      <p>by NOME DO ALUNO</p>
+      <p class="autor">by Fabiano Souza ®</p>
     </div>
     <script src="index.js"></script>
   </body>

@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto&display=swap');
 
 :root {
-  --color-primary: rgb(204, 203, 219);
+  --color-primary: rgb(242, 241, 245);
   --color-secondary: rgb(34, 28, 36);
   --color-img-bg: rgb(60, 45, 65);
 }
 
 body {
-  background-color: var(--color-secondary);
+  /*background-color: var(--color-secondary);*/
+
   color: var(--color-primary);
   font-size: 18px;
   font-family: 'Zen Kurenaido', sans-serif;
@@ -20,6 +23,20 @@ body {
   overflow-y: scroll;
 
   display: flex;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.titulo > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ::-webkit-scrollbar {
@@ -42,9 +59,12 @@ button {
 
 h1 {
   margin: 0;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Concert One', cursive;
+  color: #000;
 }
-
+h1 > span {
+  color: tomato;
+}
 p {
   margin: 0;
 }
@@ -82,8 +102,10 @@ img {
 
 #search-form {
   flex: 1;
-
+  padding-left: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #search-form input,
@@ -91,6 +113,30 @@ img {
   padding: 0.1rem 0.5rem;
   border: 0;
   font-size: 2rem;
+}
+.bt {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: tomato;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+.bt:hover {
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+  transition: 0.2s;
+}
+#confBT {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+
+  text-align: center;
 }
 
 #query {
@@ -114,9 +160,18 @@ img {
   flex-basis: 126px;
   display: flex;
   flex-direction: column;
+  color: rgb(27, 27, 27);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .poster {
   background-color: var(--color-img-bg);
   height: 177px;
+}
+.autor {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: tomato;
 }
